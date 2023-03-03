@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div class="sudoku-solver">
+        <h1 class="intro">Sudoku Solver and Game</h1>
+        <p class="description">This is a Sudoku Solver which allows you to input your own numbers and play the game.
+            You can then solve the puzzle aswell using the solve button if you are stuggling. </p>
+        <p class="instruction-1">When numbers have been inputed into the puzzle your are able to click the Solve button to be able to solve the whole puzzle.</p>
+        <h2 class="rules"> Rules of Sudoku</h2>
+        <p class="instruction-2">&#8594 To play Sodoku the aim is to in the 9x9 grid to fill each line with number 1-9 and not haveing any repeting number in line horizontally or vertically. </p>
+        <p class="instruction-2">&#8594 Then in each 3x3 grid you also have to have the numbers 1-9 and none of the squares can have repeting numbers</p>
+        <p class="instruction-3">&#8594 Have fun and Enjoy</p>
+
+            <!--<p class="instruction-3">&#8594 Click the <span class="decorator-elem">Finish</span> button to stop the
+                timer.</p>-->
+
+                <div class="box">
+                    <h3>Timer to be used if needed</h3>
+                    <div class="frame">
+                      <div class="hrs">00</div>
+                      <div class="colon">:</div>
+                      <div class="min">00</div>
+                      <div class="colon">:</div>
+                      <div class="sec">00</div>   
+                      <div class="colon">:</div>
+                      <div class="ms">00</div>
+                    </div>
+                    <div class="buttons">
+                      <button class="start">Start</button>
+                      <button class="stop">Stop</button>
+                      <button class="reset">Reset</button>
+                    </div>
+                  </div>
+                  
+                  <script src="scripts/timer.js"></script>
+
+        <div id="puzzle" class="puzzle"></div>
+        <button type="button" id="solve-button" class="solve-button">Solve</button>
+        <button type="button" id="clear-button" class="clear-button">Clear</button>
+
+
+    </div>
+
+
+    <script type="module" defer src="scripts/app.js"></script>
+    
+</body>
+
+</html>

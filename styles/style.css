@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-spacing: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3f5d63;
+}
+
+.intro,
+.timer {
+    color: #920606;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 30px 0px 10px 5%;
+}
+
+.rules{
+    color: #920606;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 30px 0px 10px 5%;
+}
+
+.instruction-1,
+.instruction-2,
+.instruction-3,
+.description {
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin: 0px 0px 15px 5%;
+}
+
+.instruction-2,
+.instruction-3 {
+    margin: 0px 0px 15px 5%;
+}
+
+.description {
+    margin: 0px 0px 15px 5%;
+}
+
+.decorator-elem {
+    font-weight: bold;
+}
+
+.sudoku-solver {
+    margin: 5%;
+}
+
+.puzzle {
+    width: 33.75em;
+    height: 33.75em;
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    margin: 5%;
+}
+
+.odd-section {
+    background: #ccadad;
+}
+
+.puzzle input {
+    text-align: center;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px #333333 solid;
+}
+
+.empty-el {
+    color: #920606;
+}
+
+.solve-button,
+.clear-button
+ {
+    margin-top: 20px;
+    background-color: #920606;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.clear-button {
+    margin-left: 15px;
+}
+
+.solve-button:hover,
+.clear-button:hover {
+    background-color: #920606;
+}
+
+
+.box{
+    background-color: #ffffffcb;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin:5%;
+}
+
+.frame{
+    display: flex;
+    gap: 3px;
+  }
+
+.hrs,
+.min,
+.sec,
+.ms,
+.colon{
+width: 50px;
+height: 50px;
+font-size: 50px;
+text-align: center;
+line-height: 50px;
+color: #920606;
+font-family: 'Roboto', sans-serif;
+margin-top: 5%;
+}
+
+.colon{
+width: 10px;
+height: 50px;
+}
+
+.buttons{
+  margin-top: 25px;
+}
+
+.buttons button{
+ border: none;
+ padding: 5px 20px;
+ color:white;
+ border-radius: 3px;
+    background-color: #920606;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.start{background-color: #920606;}
+.stop{background-color: #920606;}
+.reset{background-color:  #920606;}
+
+
+.start-active,
+.stop-active{
+  pointer-events: none;
+  opacity: 0.5;
+}
